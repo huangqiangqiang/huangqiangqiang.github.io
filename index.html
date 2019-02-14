@@ -4,11 +4,147 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+  <style>
+    html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed, 
+
+figure, figcaption, footer, header, hgroup, 
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+
+margin: 0;
+
+padding: 0;
+
+border: 0;
+
+font-size: 100%;
+
+font: inherit;
+
+vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+
+footer, header, hgroup, menu, nav, section {
+
+display: block;
+
+}
+
+body {
+
+line-height: 1;
+
+}
+
+ol, ul {
+
+list-style: none;
+
+}
+
+blockquote, q {
+
+quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+
+content: '';
+
+content: none;
+
+}
+
+table {
+
+border-collapse: collapse;
+
+border-spacing: 0;
+
+}
+
+    .container{
+      height: 100%;
+      background: url(./asset/bg.jpg) center center no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+    }
+    .logo {
+      margin: 0 auto;
+      width: 50px;
+      margin-bottom: 10px;
+    }
+    .logo > img {
+      width: 100%;
+    }
+    .slogen {
+      margin: 0 auto;
+      width: 300px;
+      margin-bottom: 30px;
+    }
+    .slogen > img {
+      width: 100%;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+    }
+    .menu > div {
+      display: flex;
+      margin-right: 20px;
+    }
+    .menu > div:last-child {
+      margin-right: 0px;
+    }
+    .menu > div > a > img {
+      width: 50px;
+    }
+  </style>
 </head>
 
 <body style="height:100%">
-  <a href="https://huangqiangqiang.github.io/notes/">notes</a>
-  <a href="https://huangqiangqiang.github.io/word-assistant-web/">word assistant</a>
+  <div class="container">
+    <div class="content">
+      <div class="logo"><img src="./asset/logo.png" alt="logo" /></div>
+      <div class="slogen"><img src="./asset/slogen.png" alt="slogen" /></div>
+      <div class="menu">
+        <div><a href="https://huangqiangqiang.github.io/notes/"><img src="./asset/notes.png" /></a></div>
+        <div><a href="https://huangqiangqiang.github.io/word-assistant-web/"><img src="./asset/wa.png" /></a></div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
